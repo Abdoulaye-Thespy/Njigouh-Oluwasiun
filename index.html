@@ -9,39 +9,42 @@
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-
-<p>Hello World, we are software developers!</p>
-
 <h1 id="title">  this is the title</title>
 
-  <p id="description" > this is a short description </p>
+<p id="description" > this is a short description </p>
 
 
 <form id="survey-form">
+  <label for="" id="name-label"></label>
+  <input type="text" id="name" placeholder="Enter your name" required> 
 
-<input type="text" id="name-label" placeholder="enter your name" required> 
+  <label for="" id="email-label"></label>
+  <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
 
-<input type="email" name="email" id="email-label" placeholder="enter your email" required>
+  <label for="" id="number-label"></label>
+  <input type="number" name="number" id="number" min="1" max="5" placeholder="Enter a number between 1 - 5">
 
-<input type="number" name="number" id="number-label" min="1" max="5">
 
+  <select id="gender" name="gendercars" id="dropdown">
+    <option value="male">Male</option>
+    <option value="female">Female</option>
+  </select>
+
+
+  <input type="radio" id="rstatus" name="rstatus" value="Single">
+  <label for="rstatus">Single</label><br>
+
+  <input type="radio" id="rstatus" name="rstatus" value="Married">
+  <label for="rstatus">Married</label><br>
+
+  <input type="checkbox" id="employmentstat1" name="employmentstat1" value="Unemployed">
+  <label for="employmentstat1"> Unemployed</label><br>
+  <input type="checkbox" id="employmentstat2" name="employmentstat2" value="Employed">
+  <label for="employmentstat2"> Employed</label><br>
+
+  <button id="submit">Submit</button>
 </form>
 
-
-
-
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
     <script  src="js/index.js"></script>
   </body>
 </html>
